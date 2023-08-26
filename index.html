@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./assets/logo.svg" alt="" />
+      </header>
+
+      <section class="pesquisar">
+        <div class="buscar">
+          <span>Buscar</span>
+        </div>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="barra-pesquisa"
+            placeholder="Pesquisar pokemon..."
+            onkeyup="pes()"
+          />
+        </div>
+      </section>
+
+      <section class="filter">
+        <div class="option bug">
+          <img src="./assets/bug.svg" alt="Type Bug icone" />
+        </div>
+        <div class="option dark">
+          <img src="./assets/dark.svg" alt="Type Dark icone" />
+        </div>
+        <div class="option dragon">
+          <img src="./assets/dragon.svg" alt="Type Dragon icone" />
+        </div>
+        <div class="option electric">
+          <img src="./assets/electric.svg" alt="Type Electric icone" />
+        </div>
+        <div class="option fairy">
+          <img src="./assets/fairy.svg" alt="Type Fairy icone" />
+        </div>
+        <div class="option fighting">
+          <img src="./assets/fighting.svg" alt="Type Fighting icone" />
+        </div>
+        <div class="option fire">
+          <img src="./assets/fire.svg" alt="Type Fire icone" />
+        </div>
+        <div class="option flying">
+          <img src="./assets/flying.svg" alt="Type Flyring icone" />
+        </div>
+        <div class="option ghost">
+          <img src="./assets/ghost.svg" alt="Type Ghost icone" />
+        </div>
+        <div class="option grass">
+          <img src="./assets/grass.svg" alt="Type Grass icone" />
+        </div>
+        <div class="option ground">
+          <img src="./assets/ground.svg" alt="Type Ground icone" />
+        </div>
+        <div class="option ice">
+          <img src="./assets/ice.svg" alt="Type Ice icone" />
+        </div>
+        <div class="option normal">
+          <img src="./assets/normal.svg" alt="Type Normal Icone" />
+        </div>
+        <div class="option poison">
+          <img src="/assets/poison.svg" alt="Type Poison icone" />
+        </div>
+        <div class="option psychic">
+          <img src="/assets/psychic.svg" alt="Type Psychic icone" />
+        </div>
+        <div class="option rock">
+          <img src="/assets/rock.svg" alt="Type Rock icone" />
+        </div>
+        <div class="option steel">
+          <img src="/assets/steel.svg" alt="Type Steel Icone" />
+        </div>
+        <div class="option water">
+          <img src="/assets/water.svg" alt="Type Water icone" />
+        </div>
+      </section>
+
+      <section class="pokemon-boxes"></section>
+
+      <footer>
+        <h3>Feito por João Pedro</h3>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

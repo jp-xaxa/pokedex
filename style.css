@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  /*background-color: rgba(248, 9, 9, 0.2);*/
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Container principal*/
+main {
+  max-width: 70%;
+  background-color: white;
+  margin: 4rem auto;
+  padding: 2rem;
+
+  border-radius: 5rem;
+}
+
+/*Título*/
+header {
+  display: flex;
+  padding: 1rem auto 1rem;
+  justify-content: center;
+}
+
+header img {
+  width: 25rem;
+  text-align: center;
+}
+
+/*Barra de pesquisa*/
+section.pesquisar {
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+.buscar {
+  padding: 1.2rem 3.2rem;
+  border: 0;
+  /*background: #BF0404; vermelho escuro*/
+  background: #f20505;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 1rem rgba(22, 22, 22, 0.3);
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buscar span {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.buscar:hover {
+  background: #f20505;
+  box-shadow: 0 0 2rem #f20505;
+  filter: saturate(200%);
+  transform: scale(1.1);
+  font-size: 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: #ffffff;
+  border: 0.07rem solid black;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.3);
+  border-radius: 0.8rem;
+  padding: 0 2.4rem;
+
+  flex: 1;
+}
+
+.input-wrapper input {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.input-wrapper:has(:focus) {
+  outline: 0.2rem black solid;
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1.6rem;
+  color: #7c7c8a;
+}
+
+/*Filtro de Types dos Pokemons*/
+section.filter {
+  display: flex;
+  margin-top: 3.2rem;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.option {
+  border-radius: 100%;
+  gap: 11.11%;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem 0.5rem;
+  transition: 500ms all;
+}
+
+.option:hover {
+  filter: saturate(200%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.option img {
+  height: 60%;
+  width: 60%;
+  margin: 20%;
+}
+
+/*Inseto*/
+.bug {
+  background: #92bc2c;
+  box-shadow: 0 0 2rem #92bc2c;
+}
+
+/*Escuidão*/
+.dark {
+  background: #595761;
+  box-shadow: 0 0 2rem #595761;
+}
+
+/*Dragão*/
+.dragon {
+  background: #0c69c8;
+  box-shadow: 0 0 2rem #0c69c8;
+}
+
+/*Elétrico*/
+.electric {
+  background: #f2d94e;
+  box-shadow: 0 0 2rem #f2d94e;
+}
+
+/*Fogo*/
+.fire {
+  background: #fba54c;
+  box-shadow: 0 0 2rem #fba54c;
+}
+
+/*Fada*/
+.fairy {
+  background: #ee90e6;
+  box-shadow: 0 0 2rem #ee90e6;
+}
+
+/*Lutador*/
+.fighting {
+  background: #d3425f;
+  box-shadow: 0 0 2rem #d3425f;
+}
+
+/*Voador*/
+.flying {
+  background: #a1bbec;
+  box-shadow: 0 0 2rem #a1bbec;
+}
+
+/*Fantasma*/
+.ghost {
+  background: #5f6dbc;
+  box-shadow: 0 0 2rem #5f6dbc;
+}
+
+/*Grama*/
+.grass {
+  background: #5fbd58;
+  box-shadow: 0 0 2rem #5fbd58;
+}
+
+/*Terrestre*/
+.ground {
+  background: #da7c4d;
+  box-shadow: 0 0 2rem #da7c4d;
+}
+
+/*Gelo*/
+.ice {
+  background: #75d0c1;
+  box-shadow: 0 0 2rem #75d0c1;
+}
+
+/*Normal*/
+.normal {
+  background: #a0a29f;
+  box-shadow: 0 0 2rem #a0a29f;
+}
+
+/*Venenoso*/
+.poison {
+  background: #b763cf;
+  box-shadow: 0 0 2rem #b763cf;
+}
+
+/*Psiquico*/
+.psychic {
+  background: #fa8581;
+  box-shadow: 0 0 2rem #fa8581;
+}
+
+/*Pedra*/
+.rock {
+  background: #c9bb8a;
+  box-shadow: 0 0 2rem #c9bb8a;
+}
+
+/*Metal*/
+.steel {
+  background: #5695a3;
+  box-shadow: 0 0 2rem #5695a3;
+}
+
+/*Água*/
+.water {
+  background: #539ddf;
+  box-shadow: 0 0 2rem #539ddf;
+}
+
+/*Boxes dos pokemons*/
+section.pokemon-boxes {
+  display: flex;
+  margin: 3.2rem 0;
+  gap: 1rem;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+.pokemon-box {
+  width: 20rem;
+  background: rgba(22, 22, 22, 0.1);
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.3);
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+#pokemon {
+  display: flex;
+}
+
+.pokemon-box img {
+  margin: 0 auto;
+  width: 15rem;
+}
+
+#type {
+  width: 2.5rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.bug-box {
+  background: #92bc2c;
+}
+
+/*Escuidão*/
+.dark-box {
+  background: #595761;
+}
+
+/*Dragão*/
+.dragon-box {
+  background: #0c69c8;
+}
+
+/*Elétrico*/
+.electric-box {
+  background: #f2d94e;
+}
+
+/*Fada*/
+.fairy-box {
+  background: #ee90e6;
+}
+
+/*Lutador*/
+.fighting-box {
+  background: #d3425f;
+}
+
+/*Fogo*/
+.fire-box {
+  background: #fba54c;
+}
+
+/*Voador*/
+.flying-box {
+  background: #a1bbec;
+}
+
+/*Fantasma*/
+.ghost-box {
+  background: #5f6dbc;
+}
+
+/*Grama*/
+.grass-box {
+  background: #5fbd58;
+}
+
+/*Terrestre*/
+.ground-box {
+  background: #da7c4d;
+}
+
+/*Gelo*/
+.ice-box {
+  background: #75d0c1;
+}
+
+/*Normal*/
+.normal-box {
+  background: #a0a29f;
+}
+
+/*Venenoso*/
+.poison-box {
+  background: #b763cf;
+}
+
+/*Psiquico*/
+.psychic-box {
+  background: #fa8581;
+}
+
+/*Pedra*/
+.rock-box {
+  background: #c9bb8a;
+}
+
+/*Metal*/
+.steel-box {
+  background: #5695a3;
+}
+
+/*Água*/
+.water-box {
+  background: #539ddf;
+}
+
+.pokemon-box p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+  font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: none;
+  }
+
+  main {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .buscar {
+    margin: 0 0 1rem;
+  }
+
+  .buscar span {
+    margin: auto;
+  }
+
+  .input-wrapper {
+    height: 4.5rem;
+  }
+
+  .option {
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .pokemon-box {
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .pokemon-box img {
+    margin: 0 auto;
+    width: 7.5rem;
+  }
+
+  #type {
+    width: 1.5rem;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+  }
+
+  .pokemon-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section.pesquisar {
+    display: block;
+  }
+}
