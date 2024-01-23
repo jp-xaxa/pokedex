@@ -5,15 +5,9 @@ Este repositório contém a implementação de uma página web Pokedex do anime 
 </p>
 
 <p align="center">
-  <a href="#🔖-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
-</p>
-
-## 🔖 Layout
-
-<p align="center">
-  <img alt="projeto Jogo Pedra Papel ou Tesoura" src="./assets/layout.png" width="100%">
+  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#⚙️-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 ## 🚀 Tecnologias
@@ -31,8 +25,6 @@ Um emocionante projeto web da Pokédex do anime foi recriado, proporcionando aos
 
 - [Acesse o projeto finalizado, online](https://jp-xaxa.github.io/pokedex)
 
-<h1 align="center">
-  Funcionalidades
-</h1>
+## ⚙️ Funcionalidades
 
 A implementação incorpora uma interface de usuário que apresenta um design simples e amigável. Adicionalmente, foi atentamente implementada a responsividade do projeto, assegurando sua adaptabilidade para uma variedade de tamanhos de tela.
